@@ -1,0 +1,54 @@
+.container{
+	height: 100%;
+	width: 24%;
+	margin: auto;
+	margin-top: 65px;
+	border: 6px solid black;
+	padding: 9px 10px 15px 9px;
+	background-color: rgb(205, 204, 202);
+}
+
+.part2 {
+	background-color: rgb(252, 166, 1);
+	padding: 15px 21px 15px 18px;
+	border-radius: 15px;
+}
+
+
+.display {
+	padding-top:17px;
+	padding-bottom: 17px;
+	border-radius: 12px;
+	background-color: rgb(94, 94, 94);
+	color: white;
+}
+
+.btn {
+	padding: 13px 17px 13px 18px;
+	border-radius: 7px;
+}
+
+.btn01 {
+	padding: 13px 27px 13px 29px;
+	border-radius: 7px;
+}
+
+.btn1 {
+	padding: 13px 27px 13px 28px;
+	border-radius: 7px;
+}
+
+.btn2 {
+	padding: 13px 27px 13px 27px;
+	border-radius: 7px;
+}
+
+.btn3 {
+	padding: 13px 27px 13px 28px;
+	border-radius: 7px;
+}
+
+.btn4 {
+	padding: 13px 61px 13px 62px;
+	border-radius: 7px;
+}

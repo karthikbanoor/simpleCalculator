@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="part2">
+			
+			<div>
+				<p class="display" id="myInput"></p>
+			</div>
+
+			<div class="part3">
+
+				<table>
+					<tr class="row1">
+						<th><button class="btn" onclick="calculate('clr')">CLR</button></th>
+						<th><button class="btn" onclick="calculate('bks')">BKS</button></th>
+						<th><button class="btn01" onclick="calculate('/')">/</button></th>
+						<th><button class="btn01" onclick="calculate('*')">*</button></th>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><button class="btn1" onclick="calculate('7')">7</button></th>
+						<th><button class="btn1" onclick="calculate('8')">8</button></th>
+						<th><button class="btn1" onclick="calculate('9')">9</button></th>
+						<th><button class="btn1" onclick="calculate('-')">-</button></th>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><button class="btn2" onclick="calculate('4')">4</button></th>
+						<th><button class="btn2" onclick="calculate('5')">5</button></th>
+						<th><button class="btn2" onclick="calculate('6')">6</button></th>
+						<th><button class="btn2" onclick="calculate('+')">+</button></th>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><button class="btn3" onclick="calculate('1')">1</button></th>
+						<th><button class="btn3" onclick="calculate('2')">2</button></th>
+						<th><button class="btn3" onclick="calculate('3')">3</button></th>
+						<th><button class="btn3" onclick="calculate('.')">.</button></th>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><button class="btn4" onclick="calculate('0')">0</button></th>
+						<th><button class="btn4" onclick="calculate('=')">=</button></th>
+					</tr>
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		function calculate(val){
+			var op = document.getElementById("myInput").innerHTML;
+
+			switch(val){
+				case '/':
+				op += '/';
+				break;
+
+				case '*':
+				op += '*';
+				break;
+
+				case 'bks':
+				var res = op.slice(0, -1);
+				op = res;
+				break;
+
+				case 'clr':
+				op = '';
+				break;
+
+				case '7':
+				op += '7'; 
+				break;
+
+				case '8':
+				op += '8'; 
+				break;
+
+				case '9':
+				op += '9'; 
+				break;
+
+				case '-':
+				op += '-';
+				break;
+
+				case '4':
+				op += '4';
+				break;
+
+				case '5':
+				op += '5';
+				break;
+
+				case '6':
+				op += '6';
+				break;
+
+				case '+':
+				op += '+';
+				break;
+
+				case '1':
+				op += '1';
+				break;
+
+				case '2':
+				op += '2';
+				break;
+
+				case '3':
+				op += '3';
+				break;
+
+				case '.':
+				op += '.';
+				break;
+
+				case '0':
+				op += '0';
+				break;
+
+				case '=':
+				op = eval(op);
+        break;
+
+				default:
+				console.log('not matched')
+				break;
+			}
+			document.getElementById("myInput").innerHTML = op;
+		}
+	</script>
+</body>
+</html>
